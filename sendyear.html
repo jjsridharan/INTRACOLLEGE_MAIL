@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<title>CS MIT
+		</title>
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<style>
+			body
+			{
+				background-color:#ECECEA;
+				width:100%;
+			}
+			#scr
+			{
+				font-size:5em;
+				color:#7D1935;
+			}
+			#dept
+			{	
+   				 margin: auto;
+    				 width: 30%;
+    				 padding: 10px;
+                                 border-style: solid;
+                                 border-color: #66aaff;
+			}
+                        #l
+                        {
+                             font-size:150%;
+                             font-color:#001f3f;
+                        }
+                        #l1,#l2,#l3,#l4
+                        {
+                              
+                              font-size:150%;  
+                        }
+                        #sub
+			{
+				width:35%;
+				margin-left:30%;
+				background:#7E8F7C;
+			}	
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div id="mar">
+				<marquee id="scr">Computer Society of MIT</marquee>
+			</div>
+			<div id="dept">
+			<label id="l">Select Year</label><br><br>
+                        <form action="sendsyear.php" method="post" enctype="multipart/form-data">
+				<input type="checkbox" name="check_list[]" value="3"/><label id="l1">&nbsp;&nbsp;&nbsp;First</label><br><br>
+				<input type="checkbox" name="check_list[]" value="2"/><label id="l2">&nbsp;&nbsp;&nbsp;Second</label><br><br>
+				<input type="checkbox" name="check_list[]" value="1"/><label id="l3">&nbsp;&nbsp;&nbsp;&nbsp;Third</label><br><br>
+				<input type="checkbox" name="check_list[]" value="0"/><label id="l4">&nbsp;&nbsp;&nbsp;Fourth</label><br><br>
+				<textarea name="bo" placeholder="Paste Body of the Mail here.." cols="45" rows="10"></textarea>
+                                <pre>Attach Files
+                                <input type="file" name="fileToUpload" id="fileToUpload">
+                                <input type="file" name="fileToUpload1" id="fileToUpload1">
+                                <input type="file" name="fileToUpload2" id="fileToUpload2">
+                                </pre>
+				<input type="submit" name="submit" id="sub" class="btn btn-primary btn-lg" value="Send Mail"></input>	
+			</form>
+			</div>
+		</div>
+	</body>
+</html>									

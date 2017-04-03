@@ -1,0 +1,5 @@
+read a
+if [ -f $a ]
+then
+	echo date -r $a
+fi

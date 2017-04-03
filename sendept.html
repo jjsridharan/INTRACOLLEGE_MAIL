@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<title>CS MIT
+		</title>
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<style>
+			body
+			{
+				background-color:#ECECEA;
+				width:100%;
+			}
+			#scr
+			{
+				font-size:5em;
+				color:#7D1935;
+			}
+			#dept
+			{	
+   				 margin: auto;
+    				 width: 30%;
+    				 padding: 10px;
+                                 border-style: solid;
+                                 border-color: #66aaff;
+			}
+			#l
+                        {
+                             font-size:150%;
+ javascript:document.forms['EditForm'].state.value='browse'; document.forms['EditForm'].state2.value='main'; document.forms['EditForm'].submit();                            font-color:#001f3f;
+                        }
+                        #l1,#l2,#l3,#l4,#l5,#l6,#l7,#l8,#l9
+                        {
+                              
+                              font-size:150%;  
+                        }
+                        #sub
+			{
+				width:35%;
+				margin-left:30%;
+				background:#7E8F7C;
+			}	
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div id="mar">
+				<marquee id="scr">Computer Society of MIT</marquee>
+			</div>
+			<div id="dept">
+			<label id="l">Select Department</label><br><br>
+                        <form action="sendsdept.php" method="post" enctype="multipart/form-data">
+				<input type="checkbox" name="check_list[]" value="AERO"><label id="l1">&nbsp;&nbsp;Aeronautical</label><br>
+				<input type="checkbox" name="check_list[]" value="AUTO"><label id="l2">&nbsp;&nbsp;Automobile</label><br>
+				<input type="checkbox" name="check_list[]" value="CSE"><label id="l3">&nbsp;&nbsp;Computer Technology</label><br>
+				<input type="checkbox" name="check_list[]" value="EIE"><label id="l4">&nbsp;&nbsp;Electronics and Instrumentation</label><br>
+				<input type="checkbox" name="check_list[]" value="ECE"><label id="l5">&nbsp;&nbsp;Electronics and Communication</label><br>
+				<input type="checkbox" name="check_list[]" value="IT"><label id="l6">&nbsp;&nbsp;Information Technology</label><br>
+				<input type="checkbox" name="check_list[]" value="MECH"><label id="l7">&nbsp;&nbsp;Mechanical</label><br>
+				<input type="checkbox" name="check_list[]" value="PT"><label id="l8">&nbsp;&nbsp;Production</label><br>
+				<input type="checkbox" name="check_list[]" value="RPT"><label id="l9">&nbsp;&nbsp;Rubber and plastics</label><br><br><br>
+				<textarea name="bo" placeholder="Paste Body of the Mail here.." cols="45" rows="10"></textarea><br><br>
+                                <pre>Attach Files
+                                <input type="file" name="fileToUpload" id="fileToUpload">
+                                <input type="file" name="fileToUpload1" id="fileToUpload1">
+                                <input type="file" name="fileToUpload2" id="fileToUpload2">
+                                </pre>
+				<input type="submit" name="submit" id="sub" class="btn btn-primary btn-lg" value="Send Mail"></input>	
+			</form>
+			</div>
+		</div>
+	</body>
+</html>		
