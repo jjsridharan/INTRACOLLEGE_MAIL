@@ -2,12 +2,9 @@ This project aims to send mail to all college students who are studying in the c
 
 They will be sent an alert message about the competitions. 
 
-The organiser can also send images through mail. He can simply select the image from computer and then upload it. 
-his way it is possible to send schedule of all events.
+The organiser can also send images through mail. He can simply select the image from computer and then upload it. This way it is possible to send schedule of all events.
 
-This project also aims to send alert messages to those participants who are selected for the next round.
-We can also send mail to students who are not from our college too. 
+This project also aims to send alert messages to those participants who are selected for the next round.We can also send mail to students who are not from our college too. 
 
-This project is customised to validate if the registered student is from our college by using the register number system of our college.
-Thus as a whole this project can be used to alert or send important messages to all or particular sutdents through mail.
+This project is customised to validate if the registered student is from our college by using the register number system of our college.Thus as a whole this project can be used to alert or send important messages to all or particular sutdents through mail.
 
